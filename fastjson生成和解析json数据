@@ -1,0 +1,19 @@
+一. fastjson生成json字符串(JavaBean,List<JavaBean>,List<String>,List<Map<String,Object>)
+
+     String jsonStrng = JSON.toJSONString(object);
+
+二. fastjson 解析json字符串为四种类型
+
+      1. JavaBean
+
+          Person person = JSON.parseObject(jsonString, Person.class);
+
+      2. List<JavaBean>
+
+          List<Person> listPerson =JSON.parseArray(jsonString, Person.class);
+
+      3. List<String>
+
+          List<String> listString = JSON.parseArray(jsonString, String.class);
+
+      4. List<Map<String,Object>>
